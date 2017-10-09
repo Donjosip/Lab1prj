@@ -19,18 +19,23 @@ public class Uppgift2b { // Final commit
 		System.out.print("Skriv in det första talet:");
 		tal1 = scan.nextInt();
 		
-		System.out.print("Skriv in det andra talet:");
+	    if(tal1 == 0){
+			System.out.println("Tackar.");
+			cont = false;
+	} 
+		
+	    else {
+	    	System.out.print("Skriv in det andra talet:");
+	    }
 		tal2 = scan.nextInt();
+		
 
 	if (tal1 > tal2) {
 		System.out.println(tal1 + " är större än " + tal2 );
 	} else if (tal1 < tal2) {
 		System.out.println(tal2 + " är större än " + tal1);
 	}	
-		else if(tal1 == 0){
-			System.out.println("Tackar.");
-			cont = false;
-	} else {
+		else {
 		System.out.println("Talen är lika");
 	}
 	
