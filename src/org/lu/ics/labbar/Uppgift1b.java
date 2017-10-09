@@ -28,7 +28,7 @@ public class Uppgift1b {
 		
 		readInt.close();
 		
-	
+		System.out.println(namn.toUpperCase() + "du tjänade" )
 
 		
 		
