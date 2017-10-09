@@ -1,38 +1,40 @@
 package org.lu.ics.labbar;
 
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Uppgift1b { // Second commit
+public class Uppgift1b { // Third commit
 
 	public static void main(String[] args) {
+		int pay;
+		int hourlyPay;
+		int hoursWorked;
+		String name; 
+		
+		Scanner scan = new Scanner (System.in);		
+		
+		System.out.print ("Ange ditt namn:");
+		name = scan.nextLine();
+		
+		System.out.print ("Ange din timlön:");
+		hourlyPay = scan.nextInt();
+		
+		System.out.print ("Ange antal arbetade timmar:");
+		hoursWorked = scan.nextInt();
+		
+		scan.close();
+		
+		
+		name = name.toUpperCase();
+		
+		DecimalFormat df = new DecimalFormat ("0.00");
+		
+		pay = hourlyPay * hoursWorked;
+		
+		System.out.println(name + " du tjänade " + df.format (pay) + " förra veckan." );
+		
 	
-		Scanner stdIn = new Scanner(System.in);
-		String namn; 
-				
-		System.out.print("Ange ditt namn:");
-		namn = stdIn.nextLine();
-		
-		stdIn.close();
-		
-		Scanner readInt = new Scanner(System.in);
-		
-		int timlön;
-		int arbetadeTimmar;
-		
-		System.out.print("Ange din timlön:");
-		timlön = readInt.nextInt();
-		
-		System.out.print("Ange antal arbetade timmar:");
-		arbetadeTimmar = readInt.nextInt();
-		
-		readInt.close();
-		
-		System.out.println(namn.toUpperCase() + "du tjänade" )
-
-		
-		
-		
 	}
 
 }
