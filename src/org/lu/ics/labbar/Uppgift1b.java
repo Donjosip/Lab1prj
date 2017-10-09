@@ -3,7 +3,7 @@ package org.lu.ics.labbar;
 
 import java.util.Scanner;
 
-public class Uppgift1b {
+public class Uppgift1b { // Second commit
 
 	public static void main(String[] args) {
 	
