@@ -2,7 +2,7 @@ package org.lu.ics.labbar;
 
 import java.util.Scanner;
 
-public class Uppgift2a { // Final commit
+public class Uppgift2b { // Final commit
 
 	public static void main(String[] args) {
 		
@@ -26,6 +26,7 @@ public class Uppgift2a { // Final commit
 	} else {
 		System.out.println("Talen är lika");
 	}
+	
 	}
 	
 	
