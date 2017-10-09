@@ -4,10 +4,10 @@ package org.lu.ics.labbar;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Uppgift1b { // Third commit
+public class Uppgift1b { // Final commit
 
 	public static void main(String[] args) {
-		int pay;
+		int totalPay;
 		int hourlyPay;
 		int hoursWorked;
 		String name; 
@@ -30,9 +30,9 @@ public class Uppgift1b { // Third commit
 		
 		DecimalFormat df = new DecimalFormat ("0.00");
 		
-		pay = hourlyPay * hoursWorked;
+		totalPay = hourlyPay * hoursWorked;
 		
-		System.out.println(name + " du tjänade " + df.format (pay) + " förra veckan." );
+		System.out.println(name + " du tjänade " + df.format (totalPay) + " förra veckan." );
 		
 	
 	}
