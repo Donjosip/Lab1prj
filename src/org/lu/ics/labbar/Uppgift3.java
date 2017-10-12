@@ -17,7 +17,7 @@ public class Uppgift3 {
 		
 		for (int i = 0; i < 5; i ++) {		// låter användaren mata in tal + räknar ut högsta värdet
 			System.out.print("Ange tal " + (i + 1) + ":");
-			tal = scan.nextInt();
+			tal = scan.nextDouble();
 			list[i] = tal;
 			
 			
